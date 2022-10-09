@@ -323,7 +323,13 @@
                             <constraint firstItem="bR8-tH-OlV" firstAttribute="trailing" secondItem="EAK-Az-JWU" secondAttribute="trailing" constant="16" id="KRe-DS-Rxk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="zIJ-TE-SkP"/>
+                    <navigationItem key="navigationItem" title="Результат" id="zIJ-TE-SkP">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="bMs-DU-Iok">
+                            <connections>
+                                <action selector="donaButtonPressed:" destination="Xrq-U7-8Au" id="CNi-bS-liY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SlD-sn-ffp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
