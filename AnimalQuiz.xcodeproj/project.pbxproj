@@ -41,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA7141928F3022A0073A97F /* AnimalQuiz */,
+				8BA7142328F3022B0073A97F /* Assets.xcassets */,
 				8BA7141828F3022A0073A97F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +57,46 @@
 		8BA7141928F3022A0073A97F /* AnimalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				8BA7141A28F3022A0073A97F /* AppDelegate.swift */,
-				8BA7141C28F3022A0073A97F /* SceneDelegate.swift */,
-				8BA7141E28F3022A0073A97F /* ViewController.swift */,
-				8BA7142028F3022A0073A97F /* Main.storyboard */,
-				8BA7142328F3022B0073A97F /* Assets.xcassets */,
-				8BA7142528F3022B0073A97F /* LaunchScreen.storyboard */,
-				8BA7142828F3022B0073A97F /* Info.plist */,
+				8BA7142F28F304A80073A97F /* ViewControllers */,
+				8BA7143128F304DE0073A97F /* Models */,
+				8BA7142E28F304180073A97F /* App */,
+				8BA7143028F304C60073A97F /* Storyboards */,
 			);
 			path = AnimalQuiz;
+			sourceTree = "<group>";
+		};
+		8BA7142E28F304180073A97F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8BA7141A28F3022A0073A97F /* AppDelegate.swift */,
+				8BA7141C28F3022A0073A97F /* SceneDelegate.swift */,
+				8BA7142828F3022B0073A97F /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8BA7142F28F304A80073A97F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BA7141E28F3022A0073A97F /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8BA7143028F304C60073A97F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8BA7142528F3022B0073A97F /* LaunchScreen.storyboard */,
+				8BA7142028F3022A0073A97F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8BA7143128F304DE0073A97F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N8Q8QKH896;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = AnimalQuiz/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pptichka.AnimalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +352,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N8Q8QKH896;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = AnimalQuiz/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +365,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pptichka.AnimalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
