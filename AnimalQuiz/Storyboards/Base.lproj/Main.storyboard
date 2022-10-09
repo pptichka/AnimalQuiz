@@ -31,6 +31,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Начать опрос">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="xW7-C1-FZ5" kind="presentation" modalPresentationStyle="fullScreen" id="9kr-Ce-gYW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -80,6 +83,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="102" y="-21"/>
+        </scene>
+        <!--Вопрос №-->
+        <scene sceneID="GDn-4E-grY">
+            <objects>
+                <viewController id="eee-pH-hhX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cI-Rm-Ym1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DCW-cR-jYa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="Rhf-Mu-Nr6"/>
+                    <connections>
+                        <segue destination="Xrq-U7-8Au" kind="show" id="elf-uJ-6Hx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qX-wq-Xb7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="-21"/>
+        </scene>
+        <!--Результат-->
+        <scene sceneID="6sS-cT-zKU">
+            <objects>
+                <viewController id="Xrq-U7-8Au" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v3f-ez-2XY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bR8-tH-OlV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Результат" id="zIJ-TE-SkP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SlD-sn-ffp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2488" y="-21"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zgO-TZ-NfY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xW7-C1-FZ5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Gah-OO-NND">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eee-pH-hhX" kind="relationship" relationship="rootViewController" id="wme-Rz-7tD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ebt-4V-C0G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="-21"/>
         </scene>
     </scenes>
     <resources>
