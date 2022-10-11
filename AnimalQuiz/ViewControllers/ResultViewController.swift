@@ -8,11 +8,16 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
+    @IBOutlet var animalTypeLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    
+    var userAnswers: [Answer]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        navigationItem.hidesBackButton = true
     }
     
     @IBAction func donaButtonPressed(_ sender: UIBarButtonItem) {
